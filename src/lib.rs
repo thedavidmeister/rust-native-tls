@@ -95,6 +95,7 @@
 //! ```
 #![doc(html_root_url = "https://docs.rs/native-tls/0.2")]
 #![warn(missing_docs)]
+#![cfg(not(all(target_arch = "wasm32", target_os = "unknown")))]
 
 #[macro_use]
 #[cfg(any(target_os = "macos", target_os = "ios"))]
